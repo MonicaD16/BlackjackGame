@@ -30,6 +30,8 @@ public class Dealer
     {
         Card drawnCard = drawCard();
         hand.add(drawnCard);
+       
+        //maybe fix to output suit of card too
         System.out.println("Dealer drew: " + drawnCard.getCardValue());
     }
 }

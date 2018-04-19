@@ -8,7 +8,7 @@ import java.util.Random;
 public class Deck
 {
     private ArrayList<Card> deck;
-// this array list can only contain cards <>
+// '<>' this array list can only contain cards
     public Deck ()
     {
         deck = new ArrayList<Card>();
