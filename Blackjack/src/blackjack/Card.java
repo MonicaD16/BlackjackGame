@@ -1,14 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package blackjack;
 
-/**
- *
- * @author S199816720
- */
-public class Card {
-    
+public class Card
+{
+  private Suit suit;
+  private CardValue cardValue;
+ 
+  public Card (CardValue cardValue, Suit suit)
+  {
+    this.cardValue = cardValue;
+    this.suit = suit;
+  }
+
+  public Suit getSuit()
+  {
+    return suit;
+  }
+ 
+  public CardValue getCardValue()
+  {
+    return cardValue;
+  }
+ 
+  public void setCardValue(CardValue cardValue)
+  {
+    this.cardValue = cardValue;
+  }
 }
+
