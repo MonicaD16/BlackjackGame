@@ -15,7 +15,7 @@ public enum CardValue
     QUEEN(10),
     KING(10),
     ACE(100);
-
+//temp ace 
     private int cardValue;
 
     private CardValue (int value)

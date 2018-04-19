@@ -29,6 +29,8 @@ public class Deck
         shuffle();
     }
     //Shuffles the deck by changing the indexes of 200 random pairs of cards in the deck.
+    
+    //maybe find a more efficient way of shuffling
     public void shuffle()
     {
         Random random = new Random();

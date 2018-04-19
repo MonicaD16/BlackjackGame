@@ -7,15 +7,13 @@ package blackjack;
 
 /**
  *
- * @author S199816720
+ * main class
  */
 public class Blackjack {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+
     }
     
 }
