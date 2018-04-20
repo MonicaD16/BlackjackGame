@@ -1,15 +1,39 @@
-
 package blackjack;
 
 public class Card
 {
+
+    /**
+     *
+     */
+    public static int[] cardsInPlay = {0};
+  
   private Suit suit;
   private CardValue cardValue;
  
-  public Card (CardValue cardValue, Suit suit)
+  public Card ()
   {
-    this.cardValue = cardValue;
-    this.suit = suit;
+        
+    int num = 0;
+              
+    boolean notInUse = false;
+    while (notInUse == false){
+        num = 1 + (int)(Math.random() * 51);
+        for (int i = 0; i<= cardsInPlay.length;i++ ){
+            if (cardsInPlay[i] == num){
+                notInUse = false;
+                break;
+            } else {
+                notInUse = true;
+            }
+        }
+    }
+    cardsInPlay[cardsInPlay.length + 1] = num;
+    
+    if (num <=13){
+        suit = HEARTS;
+    }
+    
   }
 
   public Suit getSuit()
@@ -26,11 +50,5 @@ public class Card
   {
     this.cardValue = cardValue;
   }
-
-        //if (drawnCard.getSuit() == Suit.CLUBS) {
-        //if you want to use the suit    
-            
-  
 }
-  
 

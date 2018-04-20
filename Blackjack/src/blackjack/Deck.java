@@ -8,7 +8,7 @@ import java.util.Random;
 public class Deck
 {
     private ArrayList<Card> deck;
-// '<>' this array list can only contain cards
+// this array list can only contain cards <>
     public Deck ()
     {
         deck = new ArrayList<Card>();
@@ -29,11 +29,18 @@ public class Deck
         shuffle();
     }
     //Shuffles the deck by changing the indexes of 200 random pairs of cards in the deck.
-    
-    //maybe find a more efficient way of shuffling
     public void shuffle()
     {
-        Collections.shuffle(deck);
+        Random random = new Random();
+        Card temp;
+        for(int i=0; i<200; i++)
+        {
+            int index1 = random.nextInt(deck.size()-1);
+            int index2 = random.nextInt(deck.size()-1);
+            temp = deck.get(index2);
+            deck.set(index2, deck.get(index1));
+            deck.set(index1, temp);
+        }
     }
 
     public Card get(int index)
