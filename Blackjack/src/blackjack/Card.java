@@ -1,3 +1,4 @@
+
 package blackjack;
 
 public class Card
@@ -25,5 +26,11 @@ public class Card
   {
     this.cardValue = cardValue;
   }
+
+        //if (drawnCard.getSuit() == Suit.CLUBS) {
+        //if you want to use the suit    
+            
+  
 }
+  
 

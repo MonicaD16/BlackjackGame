@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package blackjack;
 
 public enum CardValue
@@ -15,7 +20,7 @@ public enum CardValue
     QUEEN(10),
     KING(10),
     ACE(100);
-//temp ace 
+
     private int cardValue;
 
     private CardValue (int value)
@@ -27,3 +32,4 @@ public enum CardValue
       return cardValue;
     }
 }
+
